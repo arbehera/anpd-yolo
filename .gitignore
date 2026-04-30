@@ -1,0 +1,29 @@
+@"
+# Models (too large for GitHub)
+*.pt
+*.pth
+*.onnx
+
+# Virtual environment
+venv/
+lp/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated files
+debug_output/
+results/
+state_codes.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+"@ | Set-Content .gitignore
