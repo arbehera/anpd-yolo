@@ -49,6 +49,8 @@ paddleocr==2.9.1
 
 ### 1. Install dependencies
 
+```Download `lp_model.pt` from the [Releases page](https://github.com/arbehera/anpd-yolo/releases/latest) and place it in the project root.```
+
 ```powershell
 cd D:\LP_API
 pip install -r requirements.txt
