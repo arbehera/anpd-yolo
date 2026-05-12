@@ -1,3 +1,10 @@
+# CPU-only PyTorch: avoids multi-GB CUDA wheels during Docker/Linux pip install.
+# Ultralytics YOLO runs on CPU in this image (matches use_gpu=False in the pipeline).
+# Paddle pins below need Python 3.10–3.11 (see Dockerfile python:3.10-slim).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0+cpu
+torchvision==0.21.0+cpu
+
 fastapi>=0.110.0
 uvicorn[standard]>=0.27.0
 python-multipart>=0.0.9
